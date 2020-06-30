@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find px4)/launch/mavros_posix_sitl.launch"/>
+
+    <!--node name="offb" pkg="offb" type="offb_node" output="screen"/-->
+    <!--node name="px4_mavros_run" pkg="offb" type="px4_mavros_run.py" output="screen"/-->
+    <!--node name="check_reachwp" pkg="offb" type="check_reachwp.py" output="screen" launch-prefix="xterm -e"/>
+    <node name="commander" pkg="offb" type="commander.py" output="screen" launch-prefix="xterm -e"/-->
+    
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <!--include file="$(find px4)/launch/multi_uav_mavros_sitl.launch"/-->
+
+    <node name="checker_node_0" pkg="offb" type="check_reachwp_0.py" output="screen"/>
+    <node name="checker_node_1" pkg="offb" type="check_reachwp_1.py" output="screen"/>
+    <node name="checker_node_2" pkg="offb" type="check_reachwp_2.py" output="screen"/>
+    <node name="Commander_node" pkg="offb" type="commander_expend.py" output="screen"/>
+
+</launch>

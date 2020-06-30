@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <!--include file="$(find px4)/launch/multi_uav_mavros_sitl.launch"/-->
+
+    <node name="offboard_node_0" pkg="offb" type="px4_mavros_run_00.py" output="screen"/>
+    <node name="offboard_node_1" pkg="offb" type="px4_mavros_run_01.py" output="screen"/>
+    <node name="offboard_node_2" pkg="offb" type="px4_mavros_run_02.py" output="screen"/>
+
+</launch>
